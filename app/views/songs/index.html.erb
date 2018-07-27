@@ -7,7 +7,7 @@
     <%= song.artist_name %>
     <%= song.genre %>
   </tr>
-
+<%= link_to 'Delete', song, method: :delete, data: { confirm: 'For real?' } %>
   <% end %>
 
 </tbody>
