@@ -10,4 +10,7 @@
    <label>Artist name:</label><br>
   <%= f.text_field :artist_name %><br>
    <%= f.submit %>
+
+   <%= link_to "Delete", song, method: :delete, data: { confirm: "Really?" } %>
+ <a data-confirm="Really?" rel="nofollow" data-method="delete" href="/song/@song.id">Delete</a>
 <% end %>
